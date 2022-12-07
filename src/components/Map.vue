@@ -7,8 +7,6 @@ import { MapChart } from "echarts/charts"
 import {
   TitleComponent,
   TooltipComponent,
-  GridComponent,
-  DatasetComponent,
   TransformComponent
 } from "echarts/components"
 // 标签自动布局，全局过渡动画等特性
@@ -36,8 +34,6 @@ echarts.use([
   MapChart,
   TitleComponent,
   TooltipComponent,
-  GridComponent,
-  DatasetComponent,
   TransformComponent,
   LabelLayout,
   UniversalTransition,
@@ -154,6 +150,6 @@ watch(
 <style scoped>
 #map {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
 </style>
