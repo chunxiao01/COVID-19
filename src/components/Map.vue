@@ -59,9 +59,17 @@ const mapinit = () => {
   map.value.setOption({
     title: {
       text: "中国疫情",
+      textStyle: {
+        fontSize: 20,
+        fontWeight: "bolder"
+      },
       left: "center",
       top: 20,
-      subtext: options.timeData
+      subtext: options.timeData,
+      subtextStyle: {
+        fontSize: 16,
+        fontWeight: "bolder"
+      }
     },
     tooltip: {
       trigger: "item",
@@ -150,6 +158,18 @@ watch(
 <style scoped>
 #map {
   width: 100%;
-  height: 80vh;
+  height: 600px;
+}
+@media (max-width: 1200px) {
+  #map {
+    margin: 0 auto;
+    width: 375px;
+  }
+}
+@media (min-width: 1201px) {
+  #map {
+    margin: 0 auto;
+    width: 700px;
+  }
 }
 </style>

@@ -5,6 +5,7 @@ import { get_map_data } from "@/network/map/map_request"
 
 import Map from "@/components/Map.vue"
 import DigitalCard from "@/components/DigitalCard.vue"
+import WebsiteData from "./components/WebsiteData.vue"
 
 const mapData = ref(null)
 const timeData = ref("")
@@ -45,15 +46,13 @@ onMounted(async () => {
   <div class="app">
     <Map :mapData="mapData" :timeData="timeData" />
     <DigitalCard />
+    <WebsiteData />
   </div>
 </template>
 
 <style scoped>
 .app {
   padding: 10px;
-}
-.chart {
-  width: 100%;
-  height: 400px;
+  overflow: auto;
 }
 </style>
