@@ -36,7 +36,7 @@ h4 {
   text-align: center;
   margin: 30px 0 10px 0;
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .website-data {
     margin: 0 auto;
     width: 375px;
@@ -47,5 +47,5 @@ h4 {
     margin: 0 auto;
     width: 700px;
   }
-}
+} */
 </style>

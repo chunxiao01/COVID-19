@@ -115,7 +115,7 @@ const mapinit = () => {
         show: false
       },
       roam: false,
-      zoom: 1,
+      zoom: 1.1,
       itemStyle: {
         borderWidth: 1
       }
@@ -124,7 +124,7 @@ const mapinit = () => {
       type: "map",
       map: "china",
       roam: false,
-      zoom: 1,
+      zoom: 1.1,
       data: options.mapData
     }
   })
@@ -160,7 +160,7 @@ watch(
   width: 100%;
   height: 600px;
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   #map {
     margin: 0 auto;
     width: 375px;
@@ -171,5 +171,5 @@ watch(
     margin: 0 auto;
     width: 700px;
   }
-}
+} */
 </style>
