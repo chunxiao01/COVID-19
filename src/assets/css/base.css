@@ -1,0 +1,194 @@
+@import "normalize.css";
+:root {
+  --m-c-white: #ffffff;
+  --m-c-white-soft: #f8f8f8;
+  --m-c-white-mute: #f2f2f2;
+  --m-c-white-lite: #adb5bd;
+  --m-c-white-weak: #8d959d;
+
+  --m-c-black: #212529;
+  --m-c-black-soft: #343a40;
+  --m-c-black-mute: #495057;
+  --m-c-black-lite: #6c757d;
+  --m-c-black-weak: #808992;
+
+  --m-c-indigo: #2c3e50;
+  --m-c-general: #6c757d;
+
+  --m-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --m-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --m-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --m-c-divider-dark-2: rgba(60, 60, 60, 0.5);
+
+  --m-c-text-light-1: #111216;
+  --m-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --m-c-text-light-3: rgba(128, 128, 128, 0.4);
+  --m-c-text-dark-1: #f0f1f3;
+  --m-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --m-c-text-dark-3: rgba(255, 255, 255, 0.4);
+
+  --m-c-background-container-light: #f0f1f3;
+  --m-c-background-content-light: #ffffff;
+  --m-c-background-container-dark: #000000;
+  --m-c-background-content-dark: #131313;
+
+  --m-c-text-unactive-light: #6c757d;
+  --m-c-text-active-light: #027aff;
+  --m-c-text-unactive-dark: #6c757d;
+  --m-c-text-active-dark: #027aff;
+
+  --m-c-background-allicon-light: #f0f1f3;
+  --m-c-background-allicon-dark: #333333;
+
+  --m-c-bar-light: #fcfcfc;
+  --m-c-bar-dark: #131313;
+
+  --m-text-font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "Noto Sans SC", 思源黑体, "Microsoft YaHei", 微软雅黑,
+    "Noto Sans CJK SC", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+  --h-height: 100%;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--m-c-white);
+  --color-background-soft: var(--m-c-white-soft);
+  --color-background-mute: var(--m-c-white-mute);
+  --color-background-lite: var(--m-c-white-lite);
+  --color-background-weak: var(--m-c-white-weak);
+
+  --color-border: var(--m-c-divider-light-2);
+  --color-border-hover: var(--m-c-divider-light-1);
+
+  --color-heading: var(--m-c-text-light-1);
+  --color-text: var(--m-c-text-light-1);
+  --color-text-lite: var(--m-c-text-light-2);
+  --color-text-weak: var(--m-c-text-light-3);
+
+  --color-background-container: var(--m-c-background-container-light);
+  --color-background-content: var(--m-c-background-content-light);
+
+  --color-text-unactive: var(--m-c-text-unactive-light);
+  --color-text-active: var(--m-c-text-active-light);
+
+  --color-background-allicon: var(--m-c-background-allicon-light);
+
+  --color-background-bar: var(--m-c-bar-light);
+
+  --color-divider: var(--m-c-divider-light-2);
+
+  --section-gap: 160px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--m-c-black);
+    --color-background-soft: var(--m-c-black-soft);
+    --color-background-mute: var(--m-c-black-mute);
+    --color-background-lite: var(--m-c-black-lite);
+
+    --color-border: var(--m-c-divider-dark-2);
+    --color-border-hover: var(--m-c-divider-dark-1);
+
+    --color-heading: var(--m-c-text-dark-1);
+    --color-text: var(--m-c-text-dark-1);
+    --color-text-lite: var(--m-c-text-dark-2);
+
+    --color-background-container: var(--m-c-background-container-dark);
+    --color-background-content: var(--m-c-background-content-dark);
+
+    --color-text-unactive: var(--m-c-text-unactive-dark);
+    --color-text-active: var(--m-c-text-active-dark);
+
+    --color-background-allicon: var(--m-c-background-allicon-dark);
+
+    --color-background-bar: var(--m-c-bar-dark);
+
+    --color-divider: var(--m-c-divider-dark-2);
+  }
+} */
+
+:root[data-theme="dark"] {
+  --color-background: var(--m-c-black);
+  --color-background-soft: var(--m-c-black-soft);
+  --color-background-mute: var(--m-c-black-mute);
+  --color-background-lite: var(--m-c-black-lite);
+  --color-background-weak: var(--m-c-black-weak);
+
+  --color-border: var(--m-c-divider-dark-2);
+  --color-border-hover: var(--m-c-divider-dark-1);
+
+  --color-heading: var(--m-c-text-dark-1);
+  --color-text: var(--m-c-text-dark-1);
+  --color-text-lite: var(--m-c-text-dark-2);
+  --color-text-weak: var(--m-c-text-dark-3);
+
+  --color-background-container: var(--m-c-background-container-dark);
+  --color-background-content: var(--m-c-background-content-dark);
+
+  --color-text-unactive: var(--m-c-text-unactive-dark);
+  --color-text-active: var(--m-c-text-active-dark);
+
+  --color-background-allicon: var(--m-c-background-allicon-dark);
+
+  --color-background-bar: var(--m-c-bar-dark);
+
+  --color-divider: var(--m-c-divider-dark-2);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Noto Sans SC", 思源黑体, "Microsoft YaHei", 微软雅黑, "Noto Sans CJK SC",
+    "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  height: var(--h-height);
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: none;
+  text-decoration: none;
+}
+
+.vueviewer-backgrond-layer {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
