@@ -52,7 +52,6 @@ onMounted(async () => {
 
 <style scoped>
 .app {
-  padding: 10px;
   overflow: auto;
 }
 </style>

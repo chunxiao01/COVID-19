@@ -158,7 +158,7 @@ watch(
 <style scoped>
 #map {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 @media (max-width: 1200px) {
   #map {
