@@ -33,7 +33,8 @@ onMounted(async () => {
       }
       data1.push({
         name: name,
-        value: parseInt(item.today.confirm) + parseInt(item.today.wzz_add)
+        value:
+          parseInt(item.today.local_confirm_add) + parseInt(item.today.wzz_add)
       })
     })
   }
