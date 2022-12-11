@@ -38,7 +38,7 @@ onMounted(async () => {
       })
     })
   }
-  timeData.value = res.data.data.diseaseh5Shelf.areaTree[0].children[0].date
+  timeData.value = res.data.data.diseaseh5Shelf.lastUpdateTime
   mapData.value = [...data1]
 })
 </script>
