@@ -81,7 +81,7 @@ const mapinit = () => {
       {
         type: "piecewise",
         min: 0,
-        max: 10000,
+        max: 100000,
         maxOpen: true,
         splitNumber: 10,
         itemWidth: 10,
