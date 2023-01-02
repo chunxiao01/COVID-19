@@ -44,7 +44,9 @@ echarts.registerMap("china", { geoJSON: chinaAll })
 // 接下来的使用就跟之前一样，初始化图表，设置配置项
 onMounted(() => {
   mapinit()
-  map.value.showLoading()
+  if (options.mapData) {
+    map.value.showLoading()
+  }
 })
 
 onUnmounted(() => {
